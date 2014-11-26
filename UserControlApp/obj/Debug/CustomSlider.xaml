@@ -1,0 +1,61 @@
+﻿<UserControl
+    x:Class="UserControlApp.CustomSlider"
+    x:Name="customControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserControlApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="CustomStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Text="{Binding Header, ElementName=customControl}"
+                   HorizontalAlignment="Left" />
+        <StackPanel Grid.Row="0" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button x:ConnectionId='1'                         
+                    BorderThickness="1"
+                    Style="{StaticResource EditRoundButtonStyle}" />
+            <TextBox x:ConnectionId='2' x:Name="Value_edit_textbox"
+                     Text="{Binding Value, Mode=TwoWay , ElementName=customControl}"
+                                                     
+                                                              
+                     IsEnabled="False"
+                     BorderThickness="0" 
+                     Background="Transparent"
+                     Style="{StaticResource LabelTextBoxStyle}"
+                     Foreground="Wheat"
+                     InputScope="Number"/>
+            <TextBlock Text="{Binding ValueSuffix, ElementName=customControl}"/>
+        </StackPanel>
+        <Slider Grid.Row="1"
+                x:Name="Slider"
+                Minimum="{Binding Minimum, ElementName=customControl}"
+                Maximum="{Binding Maximum, ElementName=customControl}"
+                Value="{Binding Value, Mode=TwoWay, ElementName=customControl}"/>
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Left" 
+                   Text="{Binding Minimum, ElementName=Slider}"/>
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Right"
+                   Text="{Binding Maximum, ElementName=Slider}"/>
+    </Grid>
+</UserControl>
+

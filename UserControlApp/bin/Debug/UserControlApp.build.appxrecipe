@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BS-021</Machine>
+    <WindowsUser>Faisal Amin</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b7f61aac-765c-4fa9-8a45-67a303022044</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\UserControlApp.exe">
+      <PackagePath>UserControlApp.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\CustomSlider.xbf">
+      <PackagePath>CustomSlider.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\CustomStyles.xbf">
+      <PackagePath>CustomStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Faisal\Prism\Practices\UserControlApp\UserControlApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
